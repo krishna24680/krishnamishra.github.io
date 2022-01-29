@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Krishna's World</title>
+    <script src="js/typewriter.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <button id="btn" onclick="typeWriter()"><p>Click me</p></button>
+    </div>
+
+    <p id="demo"></p>
+
+    <section id="nav">
+        <nav id="logo">
+            <a href="about.htm"><img src="img/logo.png.png" alt=""></a>
+        </nav>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.htm">Home</a>
+            <a href="language.htm">Explore Now</a>
+            <a href="about.htm">About Me</a>
+            <a href="contact.htm">Contact</a>
+        </div>
+
+        <div id="main">
+            <h2 style="color: rgb(0, 0, 0); font-size: larger;">Click On Open Nav</h2>
+            <p style="color: rgb(0, 0, 0); font-size: x-larger;">There Are Some Links Where You Can Explore About Every Things Related To Coding Contact Me For Any Dobut.</p>
+            <span id="openav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Open Navbar</span>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div id="html">
+            <h1 id="hover">Html : Stands For Hyper Text Markup Language</h1>
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="Logo Html Html5 - Free image on Pixabay" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" data-noaft="1" id="hover" style="width: 108px; height: 108px; margin: 0px;">
+            <div id="para">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti qui labore vel praesentium aliquid. Inventore eligendi eaque iure, deserunt voluptatibus id tempore debitis omnis magnam molestias, delectus sapiente ullam culpa magni
+                    eveniet quam quos beatae eos explicabo, aliquid cum animi!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem optio facere, labore debitis sunt beatae expedita dignissimos nostrum porro autem illo aliquid, tempora possimus deserunt inventore ipsa consectetur ea. Adipisci velit
+                    in est deleniti possimus, reiciendis quam dignissimos deserunt eligendi dolorem vel doloremque aliquid incidunt modi repellendus laboriosam ab et illo! Debitis quos temporibus quibusdam nisi.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro id aliquam odio quisquam molestias similique, nihil delectus amet commodi aspernatur quo earum eius velit quidem aperiam autem fugit dolorem, quia facilis dignissimos, perspiciatis
+                    ipsam magni sunt! Accusamus quae ut sequi perferendis doloribus. Unde quasi exercitationem nulla ducimus placeat veniam aut id modi voluptate nihil dolor eos totam corporis at, porro vel, dolores consequuntur blanditiis suscipit consequatur
+                    quis.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis atque eos explicabo nemo ipsam qui ducimus, voluptate reprehenderit, necessitatibus praesentium, libero in a facilis sed sint vel labore? Deleniti minima nemo
+                    sint omnis!
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var i = 0;
+    var txt = 'Welcome To My World You Can Explore About Interesting Things About Code!';
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body style="text-align: center;">
+    <div style="text-align: center;">
+        <button id="btn" onclick="typeWriter()"><p>Click me</p></button>
+    </div>
+
+    <p id="demo"></p>
+
+    <div id="me">
+        <h1>I Am Krishna Mishra Or You Can Say Me As Priyanshu</h1>
+        <img src="https://i.pinimg.com/originals/9d/bb/7b/9dbb7b1fee6b77fcfd20cb2b9023701f.jpg" alt="nature wallpaper hd download  http://www.4gwallpapers.com/wp-content/uploads/2017/01… | Beautiful images  nature, Hd nature wallpapers, Beautiful nature wallpaper"
+            jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" data-noaft="1" style=" float: left; width: 445px; height: 293px; margin: 27px;">
+    </div>
+
+    <div id="write">
+        <h2></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempore quaerat exercitationem unde ipsa
+            ullam laborum saepe dolorum! Neque perspiciatis velit necessitatibus eligendi doloribus alias saepe iusto quis, repellat praesentium est ut quae eveniet!<span id="dots">...</span><span id="more"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati, commodi, dignissimos nisi aut porro deleniti provident inventore, vero eum error voluptates quo consequuntur. Excepturi laudantium officiis eligendi quo inventore aperiam debitis deleniti et quas dolor dicta, soluta odit facere optio cum voluptatibus tenetur, vitae exercitationem? Natus odit architecto cumque quisquam quo beatae officiis asperiores pariatur eveniet quod error non eius quia, necessitatibus totam quibusdam doloremque quaerat accusamus magni. Eos perferendis suscipit deserunt dolore rerum fugit sunt voluptate possimus alias quis, nobis quia et veritatis asperiores earum, vitae voluptatibus? erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+
+</body>
+<script>
+    var i = 0;
+    var txt = 'Welcome To My About Section ! Here You Can Know Every Thing About Me';
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+<script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</html>

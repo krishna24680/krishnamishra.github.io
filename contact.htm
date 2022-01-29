@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div id="contact">
+        <h1>Contact , Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente sequi, est a mollitia assumenda pariatur maxime doloribus aliquid eveniet quas harum rerum odit qui. Veritatis maxime similique temporibus saepe.</p>
+        <img id="picture" src="https://cdn.wallpapersafari.com/94/5/yfMaor.jpg" alt="Contact">
+    </div>
+
+    <div id="input">
+        <form action="php/contactinfo.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="china">China</option>
+              <option value="america">America</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="indian">India</option>
+              <option value="afganistan">Afganistan</option>
+              <option value="russia">Russia</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input id="btn" type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
